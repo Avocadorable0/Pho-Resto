@@ -121,11 +121,6 @@ select
 from menu_plat_compose as mp
 join v_plat_compose as vpc on vpc."id" = mp."platComposeId"
 
-CREATE TABLE Roplanina(
-	ID_ROPLANINA SERIAL PRIMARY KEY,
-	NOM VARCHAR(30),
-	PLACE INTeger(5)
-);
 
 
 
