@@ -13,6 +13,8 @@ class Ingredient extends Model
 
     public function plats()
     {
-        return $this->belongsToMany(Plat::class, 'plats__ingredients_plats', 'ingredientsPlatsId', 'ingredientsId')->withPivot('ingredientGramme');
+        return $this->belongsToMany(Plat::class, 'plats__ingredients_plats',
+                                                     'ingredientsPlatsId',
+                                                     'ingredientsId')->withPivot('ingredientGramme');
     }
 }

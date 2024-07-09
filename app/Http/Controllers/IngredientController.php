@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use App\Models\Ingredient;
 use Barryvdh\DomPDF\Facade\Pdf;
+use Illuminate\Support\Facades\Cache;
 
 class IngredientController extends Controller
 {
@@ -13,7 +14,7 @@ class IngredientController extends Controller
     {
         $validator = Validator::make($request->all(),[
             'ingredientNom' => 'required|string',
-            'ingredientImg' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'ingredientImg' => 'required|image|mimes:jpeg,png,jpg,gif,webp,avif|max:2048',
             'ingredientPrixGramme' => 'required|numeric',
             'ingredientCalorieGramme' => 'required|numeric',
         ]);

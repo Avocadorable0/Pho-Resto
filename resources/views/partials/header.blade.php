@@ -1,19 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Hotel Kalalao - {{ $title }}</title>
+
         <!-- Favicon-->
         <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
-        <!-- Bootstrap icons-->
-        <link href="/css/bootstrap-icons.css" rel="stylesheet" />
+
+        <link href="/css/bootstrap-icons.css" rel="stylesheet" media="print" onload="this.media='all'" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="/css/style.css" rel="stylesheet" />
-    </head>
- <body>
+        <link href="/css/style.css" rel="stylesheet" media="print" onload="this.media='all'"/>
+        </head>
+    <body>
+      <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK6NJPSG"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
