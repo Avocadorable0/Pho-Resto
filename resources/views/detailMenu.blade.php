@@ -8,12 +8,12 @@
             <h6>Liste des plats composés:</h6>
             <p>
             @foreach ($platComp as $mpc)
-                &nbsp;&nbsp;&nbsp;- <a href="{{ route('detailPlatCompose',['id'=>$mpc->id]) }}">{{ $mpc->platComposeNom }}</a> - {{ $mpc->calorietotal }} cal pour {{ $mpc->prixplatcompose}}.00 Ar <br>
+                &nbsp;&nbsp;&nbsp;- <a href="{{ route('detailPlatCompose',['id'=>$mpc->id]) }}">{{ $mpc->platComposeNom }}</a> - {{ number_format($mpc->calorietotal,2,',',' ') }} cal pour {{ number_format($mpc->prixplatcompose,2,',',' ')}} Ar <br>
             @endforeach
             </p>
             <h6>Liste des plats:</h6>
             @foreach($plat as $plt) 
-                &nbsp;&nbsp;&nbsp;- <a href="{{ route('detailPlat',['id'=>$plt->id]) }}">{{ $plt->platNom }}</a> - {{ $plt->totalcalorie }} cal pour {{ $plt->totalprix }}.00 Ar <br>
+                &nbsp;&nbsp;&nbsp;- <a href="{{ route('detailPlat',['id'=>$plt->id]) }}">{{ $plt->platNom }}</a> - {{ number_format($plt->totalcalorie,2,',',' ') }} cal pour {{ number_format($plt->totalprix,2,',',' ') }} Ar <br>
             @endforeach
         </div>
         <a class="btn btn-outline-dark mt-auto" href="{{route('editMenu',['id'=>$menu->id])}}">Modifier</a>

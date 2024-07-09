@@ -16,7 +16,7 @@
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">{{ $ing->ingredientNom }}</h5>
                                     <!-- Product price-->
-                                    {{ $ing->ingredientPrixGramme }} Ar
+                                    {{ number_format($ing->ingredientPrixGramme,2,',',' ') }} Ar
                                 </div>
                             </div>
                             <!-- Product actions-->
